@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Validator;
 class ConfigController extends CommonController
 {
     public function index()
-    {
+    {"/Applications/cores/abs(number)"
         $data = BlogConfig::all();
         $this->putFile();
         return view('admin.config.list', compact('data'));

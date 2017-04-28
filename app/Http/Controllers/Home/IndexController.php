@@ -33,7 +33,7 @@ class IndexController extends CommonController
 
     public function about()
     {
-        $about = BlogArticle::find(14);
+        $about = BlogArticle::find(1000);
         return view('home.about', compact('about'));
     }
 

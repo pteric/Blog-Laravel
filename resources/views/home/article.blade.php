@@ -17,8 +17,8 @@
             </div>
             <div class="ad"> </div>
             <div class="nextinfo">
-                @if($article->pre)<p>上一篇：<a href="{{url('article/' . $article->pre->art_id)}}">{{$article->pre->art_title}}</a></p>@endif
-                @if($article->next)<p>下一篇：<a href="{{url('article/' . $article->next->art_id)}}">{{$article->next->art_title}}</a></p>@endif
+                @if($article->pre && $article->pre->art_id != 1000)<p>上一篇：<a href="{{url('article/' . $article->pre->art_id)}}">{{$article->pre->art_title}}</a></p>@endif
+                @if($article->next && $article->next->art_id != 1000)<p>下一篇：<a href="{{url('article/' . $article->next->art_id)}}">{{$article->next->art_title}}</a></p>@endif
             </div>
         </div>
     </article>

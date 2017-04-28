@@ -83,8 +83,10 @@
                                     'onUploadSuccess' : function(file, data, response) {
                                         $('input[name=art_thumb]').val(data);
                                         $('#art_thumb_img').attr('src', '/' + data);
+                                    return null;
                                     }
                                 });
+                            return null;
                             });
                         </script>
                         <style>
